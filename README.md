@@ -2,6 +2,8 @@
 
 BANKING77 intent classification: a supervised Qwen3.5-0.8B Clef decision head + LoRA versus zero-shot Qwen structured JSON, LiquidAI d1-2B, and d3-nano. The Streamlit demo accepts pasted messages and CSVs, shows all 77 decision probabilities, exports predictions, and compares measured accuracy, macro-F1, latency, and GPU memory.
 
+**Trained checkpoint:** [Keerthunb/FeedbackLens-Qwen3.5-0.8B-BANKING77](https://huggingface.co/Keerthunb/FeedbackLens-Qwen3.5-0.8B-BANKING77) · **[Model card](MODEL_CARD.md)**
+
 ## Run
 
 Linux, Python 3.11, and an NVIDIA GPU are required for the measured configuration. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) first. For a fresh installation:
@@ -10,14 +12,14 @@ Linux, Python 3.11, and an NVIDIA GPU are required for the measured configuratio
 bash scripts/setup.sh
 .venv/bin/python scripts/fetch_models.py
 .venv/bin/python -m feedbacklens prepare --revision 1846984189f2bc0ac51c6fc3a600fa9e1714e0c6
-CUDA_VISIBLE_DEVICES=0 .venv/bin/python -m feedbacklens train
+.venv/bin/hf download Keerthunb/FeedbackLens-Qwen3.5-0.8B-BANKING77 --revision 4b1d3f242a9014a0698bc329b4c903b5403ca0d1 --local-dir artifacts/decision/best
 CUDA_VISIBLE_DEVICES=0 .venv/bin/python -m feedbacklens verify-checkpoint
 FEEDBACKLENS_GPU=0 .venv/bin/streamlit run app.py --server.address 127.0.0.1 --server.port 8507
 ```
 
 The d1 worker uses `.venv-d1` (Transformers 5.19); training and the other backends use `.venv` (5.17). Both use the same torch/CUDA build. `configs/models.json` pins model and remote-code revisions. Setup pins the tested packages and omits unused xformers/torchao integrations. The app loads one model at a time, serializes requests, and releases the previous model when switching. CSVs need a nonempty `text` column; each pasted line is one message.
 
-Trained weights, dataset rows, and local logs are excluded from Git. Training creates `artifacts/decision/best`; this is required for the supervised model. The zero-shot models can be used after fetching their weights. The committed benchmark dashboard is available independently of training. The commands use GPU 0; the recorded benchmark runs used physical GPU 2.
+Trained weights, dataset rows, and local logs are excluded from Git. The Hugging Face download provides the trained LoRA adapter, FP32 Clef head, tokenizer, and schema; base weights are fetched separately by `fetch_models.py`. To train from scratch instead, use `CUDA_VISIBLE_DEVICES=0 .venv/bin/python -m feedbacklens train`. The zero-shot models can be used after fetching their weights. The committed benchmark dashboard is available independently of training. The commands use GPU 0; the recorded benchmark runs used physical GPU 2.
 
 ## Reproduce
 
