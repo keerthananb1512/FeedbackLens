@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedbacklens"
+version = "0.1.0"
+description = "Measured BANKING77 generation and decision-model comparison"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.9", "transformers==5.17.0", "datasets>=4.8", "peft>=0.21", "accelerate", "scikit-learn", "pandas", "numpy", "safetensors", "huggingface_hub", "streamlit>=1.50"]
+
+[project.optional-dependencies]
+train = ["unsloth==2026.11.3", "unsloth_zoo==2026.11.3", "trl==1.13.0", "bitsandbytes"]
+test = ["pytest"]
+report = ["matplotlib==3.11.2"]
+
+[project.scripts]
+feedbacklens = "feedbacklens.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["feedbacklens*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

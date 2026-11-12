@@ -1,0 +1,55 @@
+.venv*/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+unsloth_compiled_cache/
+.cache/
+logs/
+.env
+.env.*
+*.safetensors
+*.pt
+*.pth
+*.bin
+
+# Regenerate dataset rows with `feedbacklens prepare`.
+/data/*
+!/data/audit.json
+
+# Keep the reusable scripts; omit local experiments and session orchestration.
+/scripts/*
+!/scripts/setup.sh
+!/scripts/fetch_models.py
+!/scripts/run_benchmarks.py
+!/scripts/check_demo.py
+!/scripts/check_browser.py
+
+# Retain focused data and prediction checks.
+/tests/*
+!/tests/test_data.py
+!/tests/test_prediction_contract.py
+
+# Publish final measurements, excluding smoke runs and row-level exports.
+/results/*
+!/results/BENCHMARKS.md
+!/results/comparison.csv
+!/results/comparison.json
+!/results/decision.json
+!/results/qwen_json.json
+!/results/d1.json
+!/results/d3.json
+!/results/tradeoffs.png
+!/results/tradeoffs.svg
+
+# Keep compact training/reload evidence; weights and trainer state stay local.
+/artifacts/*
+!/artifacts/decision/
+/artifacts/decision/*
+!/artifacts/decision/training_report.json
+!/artifacts/decision/reload_reference.json
+!/artifacts/decision/reload_verification.json
+!/artifacts/decision/reload_verification_repro.json
+!/artifacts/decision/diagnostics/
+/artifacts/decision/diagnostics/*
+!/artifacts/decision/diagnostics/initial_reload_verification.json

@@ -1,0 +1,387 @@
+[
+  {
+    "id": 0,
+    "label": "activate_my_card",
+    "description": "Activate a new bank card."
+  },
+  {
+    "id": 1,
+    "label": "age_limit",
+    "description": "Minimum or maximum age to open an account."
+  },
+  {
+    "id": 2,
+    "label": "apple_pay_or_google_pay",
+    "description": "Use a card with Apple Pay or Google Pay."
+  },
+  {
+    "id": 3,
+    "label": "atm_support",
+    "description": "Which ATMs support cash withdrawals."
+  },
+  {
+    "id": 4,
+    "label": "automatic_top_up",
+    "description": "Set up or fix automatic card top ups."
+  },
+  {
+    "id": 5,
+    "label": "balance_not_updated_after_bank_transfer",
+    "description": "Bank transfer arrived but account balance has not updated."
+  },
+  {
+    "id": 6,
+    "label": "balance_not_updated_after_cheque_or_cash_deposit",
+    "description": "Cash or cheque deposit has not updated the account balance."
+  },
+  {
+    "id": 7,
+    "label": "beneficiary_not_allowed",
+    "description": "A transfer beneficiary is not allowed."
+  },
+  {
+    "id": 8,
+    "label": "cancel_transfer",
+    "description": "Cancel an outgoing transfer."
+  },
+  {
+    "id": 9,
+    "label": "card_about_to_expire",
+    "description": "A card is expiring soon and needs renewal."
+  },
+  {
+    "id": 10,
+    "label": "card_acceptance",
+    "description": "Where a bank card is accepted for payment."
+  },
+  {
+    "id": 11,
+    "label": "card_arrival",
+    "description": "An ordered card has not arrived or its delivery status is missing."
+  },
+  {
+    "id": 12,
+    "label": "card_delivery_estimate",
+    "description": "How long delivery of a bank card normally takes."
+  },
+  {
+    "id": 13,
+    "label": "card_linking",
+    "description": "Link an existing card to the account."
+  },
+  {
+    "id": 14,
+    "label": "card_not_working",
+    "description": "A physical bank card is not working."
+  },
+  {
+    "id": 15,
+    "label": "card_payment_fee_charged",
+    "description": "An unexpected fee was charged for a card payment."
+  },
+  {
+    "id": 16,
+    "label": "card_payment_not_recognised",
+    "description": "A card payment is unrecognized or unauthorized."
+  },
+  {
+    "id": 17,
+    "label": "card_payment_wrong_exchange_rate",
+    "description": "The exchange rate on a card payment is wrong."
+  },
+  {
+    "id": 18,
+    "label": "card_swallowed",
+    "description": "An ATM kept or swallowed the bank card."
+  },
+  {
+    "id": 19,
+    "label": "cash_withdrawal_charge",
+    "description": "An unexpected fee was charged for a cash withdrawal."
+  },
+  {
+    "id": 20,
+    "label": "cash_withdrawal_not_recognised",
+    "description": "A cash withdrawal is unrecognized or unauthorized."
+  },
+  {
+    "id": 21,
+    "label": "change_pin",
+    "description": "Change or reset the card PIN."
+  },
+  {
+    "id": 22,
+    "label": "compromised_card",
+    "description": "A card may be compromised or its details exposed."
+  },
+  {
+    "id": 23,
+    "label": "contactless_not_working",
+    "description": "Contactless card payments are not working."
+  },
+  {
+    "id": 24,
+    "label": "country_support",
+    "description": "Countries where accounts or banking services are supported."
+  },
+  {
+    "id": 25,
+    "label": "declined_card_payment",
+    "description": "A card payment was declined."
+  },
+  {
+    "id": 26,
+    "label": "declined_cash_withdrawal",
+    "description": "An ATM cash withdrawal was declined."
+  },
+  {
+    "id": 27,
+    "label": "declined_transfer",
+    "description": "An outgoing bank transfer was declined."
+  },
+  {
+    "id": 28,
+    "label": "direct_debit_payment_not_recognised",
+    "description": "A direct debit payment is unrecognized or unauthorized."
+  },
+  {
+    "id": 29,
+    "label": "disposable_card_limits",
+    "description": "Limits and restrictions on disposable virtual cards."
+  },
+  {
+    "id": 30,
+    "label": "edit_personal_details",
+    "description": "Change personal profile or account details."
+  },
+  {
+    "id": 31,
+    "label": "exchange_charge",
+    "description": "Fees charged for exchanging currencies."
+  },
+  {
+    "id": 32,
+    "label": "exchange_rate",
+    "description": "What exchange rates are used."
+  },
+  {
+    "id": 33,
+    "label": "exchange_via_app",
+    "description": "Exchange currencies using the banking app."
+  },
+  {
+    "id": 34,
+    "label": "extra_charge_on_statement",
+    "description": "A small extra charge or verification charge appears on a statement."
+  },
+  {
+    "id": 35,
+    "label": "failed_transfer",
+    "description": "A bank transfer failed."
+  },
+  {
+    "id": 36,
+    "label": "fiat_currency_support",
+    "description": "Which fiat currencies can be held in an account."
+  },
+  {
+    "id": 37,
+    "label": "get_disposable_virtual_card",
+    "description": "How to get or create a disposable virtual card."
+  },
+  {
+    "id": 38,
+    "label": "get_physical_card",
+    "description": "Eligibility or availability of a physical bank card."
+  },
+  {
+    "id": 39,
+    "label": "getting_spare_card",
+    "description": "Get an additional or spare bank card."
+  },
+  {
+    "id": 40,
+    "label": "getting_virtual_card",
+    "description": "How to get or create a virtual bank card."
+  },
+  {
+    "id": 41,
+    "label": "lost_or_stolen_card",
+    "description": "A bank card was lost or stolen."
+  },
+  {
+    "id": 42,
+    "label": "lost_or_stolen_phone",
+    "description": "A phone was lost or stolen and account access is at risk."
+  },
+  {
+    "id": 43,
+    "label": "order_physical_card",
+    "description": "How to order a physical bank card."
+  },
+  {
+    "id": 44,
+    "label": "passcode_forgotten",
+    "description": "The app login passcode has been forgotten."
+  },
+  {
+    "id": 45,
+    "label": "pending_card_payment",
+    "description": "A card payment is still pending."
+  },
+  {
+    "id": 46,
+    "label": "pending_cash_withdrawal",
+    "description": "An ATM cash withdrawal is still pending."
+  },
+  {
+    "id": 47,
+    "label": "pending_top_up",
+    "description": "A card top up is still pending."
+  },
+  {
+    "id": 48,
+    "label": "pending_transfer",
+    "description": "A bank transfer is still pending."
+  },
+  {
+    "id": 49,
+    "label": "pin_blocked",
+    "description": "A card PIN is blocked after incorrect attempts."
+  },
+  {
+    "id": 50,
+    "label": "receiving_money",
+    "description": "Receive money or a salary into the account."
+  },
+  {
+    "id": 51,
+    "label": "Refund_not_showing_up",
+    "description": "An expected merchant refund has not appeared."
+  },
+  {
+    "id": 52,
+    "label": "request_refund",
+    "description": "Request a refund for a card purchase."
+  },
+  {
+    "id": 53,
+    "label": "reverted_card_payment?",
+    "description": "A card payment was reverted or reversed."
+  },
+  {
+    "id": 54,
+    "label": "supported_cards_and_currencies",
+    "description": "Which external cards and currencies can be used for card top ups."
+  },
+  {
+    "id": 55,
+    "label": "terminate_account",
+    "description": "Close or terminate the bank account."
+  },
+  {
+    "id": 56,
+    "label": "top_up_by_bank_transfer_charge",
+    "description": "Fees for topping up the account by bank transfer."
+  },
+  {
+    "id": 57,
+    "label": "top_up_by_card_charge",
+    "description": "Fees for topping up the account by card."
+  },
+  {
+    "id": 58,
+    "label": "top_up_by_cash_or_cheque",
+    "description": "Whether cash or cheque can be used to top up an account."
+  },
+  {
+    "id": 59,
+    "label": "top_up_failed",
+    "description": "An attempt to top up by card failed."
+  },
+  {
+    "id": 60,
+    "label": "top_up_limits",
+    "description": "Limits on card top up amounts or frequency."
+  },
+  {
+    "id": 61,
+    "label": "top_up_reverted",
+    "description": "A card top up was reverted or reversed."
+  },
+  {
+    "id": 62,
+    "label": "topping_up_by_card",
+    "description": "How to top up an account using a bank card."
+  },
+  {
+    "id": 63,
+    "label": "transaction_charged_twice",
+    "description": "A transaction was charged twice."
+  },
+  {
+    "id": 64,
+    "label": "transfer_fee_charged",
+    "description": "A fee was charged for an outgoing bank transfer."
+  },
+  {
+    "id": 65,
+    "label": "transfer_into_account",
+    "description": "How to transfer money from another bank into this account."
+  },
+  {
+    "id": 66,
+    "label": "transfer_not_received_by_recipient",
+    "description": "A recipient has not received an outgoing transfer."
+  },
+  {
+    "id": 67,
+    "label": "transfer_timing",
+    "description": "How long a bank transfer normally takes."
+  },
+  {
+    "id": 68,
+    "label": "unable_to_verify_identity",
+    "description": "Identity verification failed or cannot be completed."
+  },
+  {
+    "id": 69,
+    "label": "verify_my_identity",
+    "description": "How to verify identity and which documents are needed."
+  },
+  {
+    "id": 70,
+    "label": "verify_source_of_funds",
+    "description": "Verify or explain the source of account funds."
+  },
+  {
+    "id": 71,
+    "label": "verify_top_up",
+    "description": "Verify a card used for a top up."
+  },
+  {
+    "id": 72,
+    "label": "virtual_card_not_working",
+    "description": "A virtual bank card is not working."
+  },
+  {
+    "id": 73,
+    "label": "visa_or_mastercard",
+    "description": "Whether the bank card is Visa or Mastercard."
+  },
+  {
+    "id": 74,
+    "label": "why_verify_identity",
+    "description": "Why identity verification is required."
+  },
+  {
+    "id": 75,
+    "label": "wrong_amount_of_cash_received",
+    "description": "An ATM dispensed a different amount of cash than requested."
+  },
+  {
+    "id": 76,
+    "label": "wrong_exchange_rate_for_cash_withdrawal",
+    "description": "The exchange rate on an ATM cash withdrawal is wrong."
+  }
+]

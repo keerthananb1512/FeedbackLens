@@ -1,0 +1,146 @@
+{
+  "passed": true,
+  "acceptance": "Exact restored head/adapter tensors and configuration, matching tokenizer probes, valid distributions and unchanged validation labels",
+  "fresh_process_reload": true,
+  "checkpoint": "./artifacts/decision/best",
+  "weights": {
+    "head": {
+      "tensors": 122,
+      "missing": [],
+      "unexpected": [],
+      "different": [],
+      "bit_identical": true
+    },
+    "adapter": {
+      "tensors": 372,
+      "missing": [],
+      "unexpected": [],
+      "different": [],
+      "bit_identical": true
+    }
+  },
+  "configuration_match": true,
+  "tokenizer_probe_match": true,
+  "comparisons": [
+    {
+      "id": "train:0",
+      "expected_label": "card_arrival",
+      "loaded_label": "card_arrival",
+      "max_probability_abs_error": 0.00030000000000000165,
+      "label_match": true,
+      "probabilities_close": false
+    },
+    {
+      "id": "train:1006",
+      "expected_label": "card_delivery_estimate",
+      "loaded_label": "card_delivery_estimate",
+      "max_probability_abs_error": 0.0002000000000000001,
+      "label_match": true,
+      "probabilities_close": false
+    },
+    {
+      "id": "train:1009",
+      "expected_label": "card_delivery_estimate",
+      "loaded_label": "card_delivery_estimate",
+      "max_probability_abs_error": 0.0001000000000000445,
+      "label_match": true,
+      "probabilities_close": true
+    },
+    {
+      "id": "train:1016",
+      "expected_label": "card_delivery_estimate",
+      "loaded_label": "card_delivery_estimate",
+      "max_probability_abs_error": 0.00019999999999997797,
+      "label_match": true,
+      "probabilities_close": true
+    },
+    {
+      "id": "train:1017",
+      "expected_label": "card_delivery_estimate",
+      "loaded_label": "card_delivery_estimate",
+      "max_probability_abs_error": 0.0009000000000000119,
+      "label_match": true,
+      "probabilities_close": false
+    },
+    {
+      "id": "train:1023",
+      "expected_label": "card_delivery_estimate",
+      "loaded_label": "card_delivery_estimate",
+      "max_probability_abs_error": 0.0010000000000000009,
+      "label_match": true,
+      "probabilities_close": false
+    },
+    {
+      "id": "train:1034",
+      "expected_label": "card_delivery_estimate",
+      "loaded_label": "card_delivery_estimate",
+      "max_probability_abs_error": 0.008199999999999985,
+      "label_match": true,
+      "probabilities_close": false
+    },
+    {
+      "id": "train:1044",
+      "expected_label": "card_delivery_estimate",
+      "loaded_label": "card_delivery_estimate",
+      "max_probability_abs_error": 0.014000000000000012,
+      "label_match": true,
+      "probabilities_close": false
+    }
+  ],
+  "probability_reproducibility": {
+    "all_close": false,
+    "atol": 0.0001,
+    "rtol": 0.001,
+    "max_abs_error": 0.014000000000000012,
+    "note": "Probability agreement is reported separately from weight integrity. BF16 inference differed between the training and fresh processes despite exact restored tensors; the precise numerical cause is unresolved. This check does not establish bitwise inference reproducibility."
+  },
+  "checkpoint_files": {
+    "README.md": "4c2423cde13d2ef1775d1e90f1a3a8cd59b82b401b8915b18c198488d3c18f88",
+    "adapter_model.safetensors": "5001c2009dc2a0788d6d8268576c40819077b2f9f3073a3c1284a84b7663a01d",
+    "adapter_config.json": "397aeb36809aa70abc5896502d1edd0ccc61efc50260f37a61ed0a614f8ea1c2",
+    "chat_template.jinja": "ea210e5b4997b7b1d3af5ee3ad34e7677ffe38df7469e8d88089789b5a27fae5",
+    "tokenizer_config.json": "5e254401a680224721ee0508f7d90db877c4a9d53830f6b1bc549c0ca5211d1c",
+    "tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "processor_config.json": "3814737f2d4bfdd153a82364b3850f1be5dbc6f074a55c8d5fbf4d40127c3e87",
+    "unsloth_decision_config.json": "7d0b04495944076e17cef41d56210f7b62ffb9b817d458d19667fc01e55e0046",
+    "joint_head_config.json": "99f65ef462b1c92d9304ad1acecbbab93506efc0ba8227c46582b4264d27aa30",
+    "joint_head.safetensors": "374001391f2acc676534b123fb5ee62674cb1775c1b5803aeb6bf17be8eb65c9",
+    "feedbacklens.json": "bc6745cdc9734314a23c7ca0d6a080d85c9d7de3bee78da666e58b426b134950",
+    "intents.json": "c8bd9ae401c1b7463169f90caf27054a2c70706ff537973919a91bd1ad665c46"
+  },
+  "environment": {
+    "python": "3.11.17",
+    "platform": "Linux-4.18.0-408.el8.x86_64-x86_64-with-glibc2.34",
+    "packages": {
+      "torch": "2.9.0+cu128",
+      "transformers": "5.17.0",
+      "unsloth": "2026.11.3",
+      "unsloth_zoo": "2026.11.3",
+      "peft": "0.21.2",
+      "datasets": "4.8.5",
+      "accelerate": "1.14.0",
+      "triton": "3.5.0",
+      "flash-linear-attention": "0.5.2",
+      "causal-conv1d": "1.7.0",
+      "streamlit": "1.67.0",
+      "numpy": "2.4.6",
+      "scikit-learn": "1.9.1"
+    },
+    "cuda": "12.8",
+    "gpu": {
+      "name": "NVIDIA GeForce RTX 4090",
+      "total_memory_bytes": 25252724736,
+      "visible_device": "0"
+    },
+    "nvidia_smi": "uuid, name, driver_version, memory.used [MiB], utilization.gpu [%]\nGPU-3c2050a8-dc32-b73a-c484-8f83036d166a, NVIDIA GeForce RTX 4090, 595.84, 11316 MiB, 100 %\nGPU-131e4c8b-63a2-f212-28d9-59f9ee69e87c, NVIDIA GeForce RTX 4090, 595.84, 10051 MiB, 100 %\nGPU-32162ca8-3edc-99d1-1135-1512f132ee86, NVIDIA GeForce RTX 4090, 595.84, 12550 MiB, 100 %\nGPU-abf458cf-fd41-7ce8-c978-f716d326ffa9, NVIDIA GeForce RTX 4090, 595.84, 10053 MiB, 100 %\n",
+    "gpu_processes": [
+      "GPU-3c2050a8-dc32-b73a-c484-8f83036d166a, [redacted], Python process, 1254 MiB",
+      "GPU-3c2050a8-dc32-b73a-c484-8f83036d166a, [redacted], Python process, 10048 MiB",
+      "GPU-131e4c8b-63a2-f212-28d9-59f9ee69e87c, [redacted], Python process, 10042 MiB",
+      "GPU-32162ca8-3edc-99d1-1135-1512f132ee86, [redacted], Python process, 10046 MiB",
+      "GPU-32162ca8-3edc-99d1-1135-1512f132ee86, [redacted], Python process, 2490 MiB",
+      "GPU-abf458cf-fd41-7ce8-c978-f716d326ffa9, [redacted], Python process, 10044 MiB"
+    ]
+  },
+  "publication_note": "Host process IDs, commands and machine-specific paths are redacted; measured metrics and protocol are unchanged."
+}

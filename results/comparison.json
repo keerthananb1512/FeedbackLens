@@ -1,0 +1,42 @@
+[
+  {
+    "model": "decision",
+    "regime": "supervised on BANKING77 train",
+    "accuracy": 0.924025974025974,
+    "macro_f1": 0.9237919189536611,
+    "median_ms": 108.4250965,
+    "p95_ms": 114.2636065,
+    "peak_gpu_gib": 1.8895387649536133,
+    "invalid": 0
+  },
+  {
+    "model": "qwen_json",
+    "regime": "zero-shot on BANKING77 (no local fine-tuning)",
+    "accuracy": 0.6168831168831169,
+    "macro_f1": 0.6045181544376587,
+    "median_ms": 339.1344735,
+    "p95_ms": 486.5739822999999,
+    "peak_gpu_gib": 1.7110533714294434,
+    "invalid": 0
+  },
+  {
+    "model": "d1",
+    "regime": "zero-shot on BANKING77 (no local fine-tuning)",
+    "accuracy": 0.8133116883116883,
+    "macro_f1": 0.8062410575542333,
+    "median_ms": 90.27499,
+    "p95_ms": 94.58625105,
+    "peak_gpu_gib": 3.6504955291748047,
+    "invalid": 0
+  },
+  {
+    "model": "d3",
+    "regime": "zero-shot on BANKING77 (no local fine-tuning)",
+    "accuracy": 0.8782467532467533,
+    "macro_f1": 0.8727872633435907,
+    "median_ms": 84.7724,
+    "p95_ms": 88.015495,
+    "peak_gpu_gib": 4.238312244415283,
+    "invalid": 0
+  }
+]

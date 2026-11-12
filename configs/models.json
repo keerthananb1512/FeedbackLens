@@ -1,0 +1,14 @@
+{
+  "qwen_json": {
+    "repo_id": "unsloth/Qwen3.5-0.8B",
+    "revision": "23c69c53358a07516b5827588b3fdb12ae78fd65"
+  },
+  "d1": {
+    "repo_id": "LiquidAI/d1-2B",
+    "revision": "652f920e544ea37f81e4b0ce89b81d4ed0da90b1"
+  },
+  "d3": {
+    "repo_id": "vllm-sr/d3-nano",
+    "revision": "8198c9f763b046605b2f4827b4999971fa2c92c4"
+  }
+}

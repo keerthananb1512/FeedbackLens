@@ -1,0 +1,3 @@
+# Separate runtime: d1's current LFM3 code requires 5.19, Unsloth supports <=5.17.
+transformers==5.19.0
+tokenizers==0.23.1
